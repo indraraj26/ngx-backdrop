@@ -2,7 +2,12 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'ngx-backdrop',
-  template: ` <div *ngIf="show" class="ngx-backdrop" [ngStyle]="styles"></div>`,
+  template: `<div
+    *ngIf="show"
+    class="ngx-backdrop"
+    [ngStyle]="styles"
+    (click)="onBackdrop()"
+  ></div>`,
   styles: [
     `
       .ngx-backdrop {
@@ -15,10 +20,25 @@ import { Component, Input } from '@angular/core';
         opacity: 0.8;
         z-index: 999;
       }
+
+      :host(.full) .ngx-backdrop {
+        position: fixed;
+      }
+
+      :host(.content) .ngx-backdrop {
+        position: absolute;
+      }
     `,
   ],
 })
 export class NgxBackdropComponent {
   @Input() styles!: any;
   @Input() show = false;
+  @Input() canBackDropDismiss = false;
+
+  onBackdrop() {
+    if (this.canBackDropDismiss) {
+      this.show = false;
+    }
+  }
 }

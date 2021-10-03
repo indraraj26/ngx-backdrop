@@ -14,7 +14,7 @@ export class ContentOverlayComponent implements OnInit {
 
   
   styles=  {
-    background: 'rgba(0,0,0,0.7)'
+    background: 'rgba(0,0,0,0.6)'
   }
 
   onViewMore() {

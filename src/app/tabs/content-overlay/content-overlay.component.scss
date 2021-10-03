@@ -10,6 +10,7 @@
   .btn-more {
     padding: 4px 10px;
     &:hover {
+      cursor: pointer;
       background-color: #4dafff;
       transform: scale(1.1);
     }
