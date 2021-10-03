@@ -1,0 +1,16 @@
+<ul>
+  <li
+    routerLink="./content"
+    routerLinkActive="li-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Content Overlay
+  </li>
+  <li routerLink="./element" routerLinkActive="li-active">
+    Element Content Overlay
+  </li>
+  <li routerLink="./full" routerLinkActive="li-active">Full Overlay</li>
+</ul>
+<div class="tab-body">
+  <router-outlet></router-outlet>
+</div>
