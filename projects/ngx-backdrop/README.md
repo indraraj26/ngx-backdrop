@@ -1,24 +1,42 @@
-# NgxBackdrop
+# ngx-backdrop @Indraraj26
+# [Demo]()
+## @Props
+- show - {boolean} - default: true
+- canBackDropDismiss - {boolean} - default : false
+- styles - { {[key: string]: any} } 
+    
+## @Event
+- onBackDropDismiss - {listener} - When user will click on backdrop this event will fire for that you will have to set canBackDropDismiss true
+      
+## @Usage
+html: 
+```
+ <div class="cards">
+             <ngx-backdrop class="full" [show]="true" [styles]="styles" [canBackDropDismiss]="true"
+             (onBackDropDismiss)="onBackDropDismiss($event)">
+             </ngx-backdrop>
+             <div>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga fugit minima illo recusandae? Cupiditate provident dolorum suscipit, quam magnam nam minima recusandae sapiente! 
+                 <div class="btn-container">
+                     <button class="btn-more" (click)="onViewMore()">View More</button>
+                 </div>
+             </div>
+         </div>
+```
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+ts:
+```
+ export class FullOverlayComponent {
+            styles=  {
+              background: 'rgba(0,0,0,0.8)',
+            }
+          
+            onViewMore() {
+              alert('view more rocks')
+            }
 
-## Code scaffolding
-
-Run `ng generate component component-name --project ngx-backdrop` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-backdrop`.
-> Note: Don't forget to add `--project ngx-backdrop` or else it will be added to the default project in your `angular.json` file. 
-
-## Build
-
-Run `ng build ngx-backdrop` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ngx-backdrop`, go to the dist folder `cd dist/ngx-backdrop` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-backdrop` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+            onBackDropDismiss(event: any) {
+                console.log(event, 'backdrop dismiss')
+            }
+          }       
+```

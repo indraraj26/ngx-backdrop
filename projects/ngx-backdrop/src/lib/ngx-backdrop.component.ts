@@ -32,8 +32,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   ],
 })
 export class NgxBackdropComponent {
-  @Input() styles!: any;
-  @Input() show = false;
+  @Input() styles!: {[key: string]: any};
+  @Input() show = true;
   @Input() canBackDropDismiss = false;
   @Output() onBackDropDismiss = new EventEmitter<HTMLDivElement>();
   
