@@ -12,16 +12,16 @@
 html: 
 ```
  <div class="cards">
-             <ngx-backdrop class="full" [styles]="styles" [canBackDropDismiss]="true"
+      <ngx-backdrop class="full" [styles]="styles" [canBackDropDismiss]="true"
              (onBackDropDismiss)="onBackDropDismiss($event)">
-             </ngx-backdrop>
-             <div>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga fugit minima illo recusandae? Cupiditate provident dolorum suscipit, quam magnam nam minima recusandae sapiente! 
-                 <div class="btn-container">
-                     <button class="btn-more" (click)="onViewMore()">View More</button>
-                 </div>
-             </div>
-         </div>
+      </ngx-backdrop>
+      <div>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga fugit minima illo recusandae? Cupiditate provident dolorum susci
+     <div class="btn-container">
+         <button class="btn-more" (click)="onViewMore()">View More</button>
+     </div>
+   </div>
+</div>
 ```
 
 ts:
