@@ -1,7 +1,7 @@
 # ngx-backdrop @Indraraj26
 # [Demo]()
 ## @Props
-- show - {boolean} - default: true
+- show - {boolean} - default: true - toggle backdrop
 - canBackDropDismiss - {boolean} - default : false
 - styles - { {[key: string]: any} } 
     
@@ -12,7 +12,7 @@
 html: 
 ```
  <div class="cards">
-             <ngx-backdrop class="full" [show]="true" [styles]="styles" [canBackDropDismiss]="true"
+             <ngx-backdrop class="full" [styles]="styles" [canBackDropDismiss]="true"
              (onBackDropDismiss)="onBackDropDismiss($event)">
              </ngx-backdrop>
              <div>
