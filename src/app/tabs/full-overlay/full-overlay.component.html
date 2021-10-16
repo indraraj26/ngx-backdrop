@@ -1,12 +1,57 @@
 <div class="cards">
-    <ngx-backdrop class="full" [show]="true" [styles]="styles" [canBackDropDismiss]="true">
+    <ngx-backdrop class="full" [show]="true" [styles]="styles" [canBackDropDismiss]="true"
+        (onBackDropDismiss)="onBackDropDismiss($event)">
     </ngx-backdrop>
     <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga fugit minima illo recusandae? Cupiditate provident dolorum suscipit, quam magnam nam minima recusandae sapiente! Dicta odio architecto nam porro laboriosam!
-        Minima quidem voluptates illum laudantium deserunt reprehenderit! Libero nihil maxime nemo sequi facere incidunt sapiente ut quo officiis omnis nostrum modi saepe reprehenderit enim eligendi ad, voluptate, consequuntur ex minus.
-        Rniti rerum iusto consequatur eveniet officiis numquam, voluptate in! Explicabo rem blanditiis et soluta sint reprehenderit ullam pariatur eveniet saepe nobis magnam veritatis velit, voluptate, recusandae deserunt?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga fugit minima illo recusandae? Cupiditate
+        provident dolorum suscipit, quam magnam nam minima recusandae sapiente! Dicta odio architecto nam porro
+        laboriosam!
+        Minima quidem voluptates illum laudantium deserunt reprehenderit! Libero nihil maxime nemo sequi facere incidunt
+        sapiente ut quo officiis omnis nostrum modi saepe reprehenderit enim eligendi ad, voluptate, consequuntur ex
+        minus.
+        Rniti rerum iusto consequatur eveniet officiis numquam, voluptate in! Explicabo rem blanditiis et soluta sint
+        reprehenderit ullam pariatur eveniet saepe nobis magnam veritatis velit, voluptate, recusandae deserunt?
         <div class="btn-container">
             <button class="btn-more" (click)="onViewMore()">View More</button>
         </div>
     </div>
+</div>
+
+<div class="code-container">
+    <div>
+        html:
+    </div>
+    <textarea autosize disabled="true" class="text-doc">
+         <div class="cards">
+             <ngx-backdrop class="full" [show]="true" [styles]="styles" [canBackDropDismiss]="true"
+             (onBackDropDismiss)="onBackDropDismiss($event)">
+             </ngx-backdrop>
+             <div>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga fugit minima illo recusandae? Cupiditate provident dolorum suscipit, quam magnam nam minima recusandae sapiente! Dicta odio architecto nam porro laboriosam!
+                 Minima quidem voluptates illum laudantium deserunt reprehenderit! Libero nihil maxime nemo sequi facere incidunt sapiente ut quo officiis omnis nostrum modi saepe reprehenderit enim eligendi ad, voluptate, consequuntur ex minus.
+                 Rniti rerum iusto consequatur eveniet officiis numquam, voluptate in! Explicabo rem blanditiis et soluta sint reprehenderit ullam pariatur eveniet saepe nobis magnam veritatis velit, voluptate, recusandae deserunt?
+                 <div class="btn-container">
+                     <button class="btn-more" (click)="onViewMore()">View More</button>
+                 </div>
+             </div>
+         </div>
+        </textarea>
+    <div>
+        ts:
+    </div>
+    <textarea autosize disabled="true" class="text-doc">
+        export class FullOverlayComponent {
+            styles=  {
+              background: 'rgba(0,0,0,0.8)',
+            }
+          
+            onViewMore() {
+              alert('view more rocks')
+            }
+
+            onBackDropDismiss(event: any) {
+                console.log(event, 'backdrop dismiss')
+            }
+          }        
+      </textarea>
 </div>

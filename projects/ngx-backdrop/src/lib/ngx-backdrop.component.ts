@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'ngx-backdrop',
@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
     *ngIf="show"
     class="ngx-backdrop"
     [ngStyle]="styles"
-    (click)="onBackdrop()"
+    (click)="onBackdrop($any($event))"
   ></div>`,
   styles: [
     `
@@ -35,10 +35,12 @@ export class NgxBackdropComponent {
   @Input() styles!: any;
   @Input() show = false;
   @Input() canBackDropDismiss = false;
-
-  onBackdrop() {
+  @Output() onBackDropDismiss = new EventEmitter<HTMLDivElement>();
+  
+  onBackdrop(event: HTMLDivElement) {
     if (this.canBackDropDismiss) {
       this.show = false;
+      this.onBackDropDismiss.emit(event)
     }
   }
 }
