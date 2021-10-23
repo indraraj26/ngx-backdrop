@@ -6,7 +6,7 @@ import { FullOverlayComponent } from './full-overlay/full-overlay.component';
 import { ContentOverlayComponent } from './content-overlay/content-overlay.component';
 import { ElementContentOverlayComponent } from './element-content-overlay/element-content-overlay.component';
 import { TabsComponent } from './tabs.component';
-import { NgxBackdropModule } from '../../../projects/ngx-backdrop/src/lib/ngx-backdrop.module';
+import { NgxBackdropModule } from '@indraraj26/ngx-backdrop';
 
 const tabRoutes = [
   {

@@ -1,5 +1,5 @@
 {
-  "name": "ngx-backdrop",
+  "name": "@indraraj26/ngx-backdrop",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^12.1.0",

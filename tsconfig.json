@@ -14,8 +14,8 @@
     "paths": {
       "ngx-backdrop": [
         "dist/ngx-backdrop/ngx-backdrop",
-        "dist/ngx-backdrop"
-      ]
+        "projects/ngx-backdrop/dist"
+      ] 
     },
     "experimentalDecorators": true,
     "moduleResolution": "node",

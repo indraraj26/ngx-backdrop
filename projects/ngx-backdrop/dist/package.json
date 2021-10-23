@@ -1,0 +1,18 @@
+{
+  "name": "@indraraj26/ngx-backdrop",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^12.1.0",
+    "@angular/core": "^12.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  },
+  "main": "bundles/indraraj26-ngx-backdrop.umd.js",
+  "module": "fesm2015/indraraj26-ngx-backdrop.js",
+  "es2015": "fesm2015/indraraj26-ngx-backdrop.js",
+  "esm2015": "esm2015/indraraj26-ngx-backdrop.js",
+  "fesm2015": "fesm2015/indraraj26-ngx-backdrop.js",
+  "typings": "indraraj26-ngx-backdrop.d.ts",
+  "sideEffects": false
+}

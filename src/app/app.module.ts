@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgxBackdropModule } from './../../projects/ngx-backdrop/src/lib/ngx-backdrop.module';
+import { NgxBackdropModule } from '@indraraj26/ngx-backdrop';
 
 @NgModule({
   declarations: [
