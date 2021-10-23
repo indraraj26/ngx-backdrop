@@ -1,6 +1,23 @@
 {
   "name": "backdrop",
   "version": "0.0.1",
+	"author": "indraraj26",
+  "license": "MIT",
+  "homepage": "https://github.com/indraraj26/ngx-backdrop",
+  "bugs": {
+		"url": "https://github.com/indraraj26/ngx-backdrop/issues"
+	},
+  "keywords": [
+		"backdrop",
+		"ng-backdrop",
+		"ngx-backdrop",
+		"angular-backdrop"
+	],
+  "repository": {
+		"type": "git",
+		"url": "git@github.com:indraraj26/ngx-backdrop.git"
+	},
+  "description": "This provides backdrop component with Props and Event to manage",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
