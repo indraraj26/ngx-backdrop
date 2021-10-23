@@ -27,7 +27,9 @@
     "dist:test": "angular-http-server --path dist/backdrop --open",
     "build-lib": "ng build ngx-backdrop",
     "add-lib": "npm i projects/ngx-backdrop/dist",
-    "lib": "npm run build-lib && npm uninstall @indraraj26/ngx-backdrop && npm run add-lib"
+    "lib": "npm run build-lib && npm uninstall @indraraj26/ngx-backdrop && npm run add-lib",
+    "ngh:build": "ng build --base-href https://indraraj26.github.io/ngx-backdrop/ ",
+    "ngh:deploy": "ngh --message=deploy-1 --dir=dist/backdrop --branch=gh-pages"
   },
   "private": true,
   "dependencies": {
