@@ -1,22 +1,22 @@
 {
   "name": "backdrop",
   "version": "0.0.1",
-	"author": "indraraj26",
+  "author": "indraraj26",
   "license": "MIT",
   "homepage": "https://github.com/indraraj26/ngx-backdrop",
   "bugs": {
-		"url": "https://github.com/indraraj26/ngx-backdrop/issues"
-	},
+    "url": "https://github.com/indraraj26/ngx-backdrop/issues"
+  },
   "keywords": [
-		"backdrop",
-		"ng-backdrop",
-		"ngx-backdrop",
-		"angular-backdrop"
-	],
+    "backdrop",
+    "ng-backdrop",
+    "ngx-backdrop",
+    "angular-backdrop"
+  ],
   "repository": {
-		"type": "git",
-		"url": "git@github.com:indraraj26/ngx-backdrop.git"
-	},
+    "type": "git",
+    "url": "git@github.com:indraraj26/ngx-backdrop.git"
+  },
   "description": "This provides backdrop component with Props and Event to manage",
   "scripts": {
     "ng": "ng",
@@ -24,6 +24,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "dist:test": "angular-http-server --path dist/backdrop --open",
     "build-lib": "ng build ngx-backdrop",
     "add-lib": "npm i projects/ngx-backdrop/dist",
     "lib": "npm run build-lib && npm uninstall @indraraj26/ngx-backdrop && npm run add-lib"
@@ -50,6 +51,7 @@
     "@angular/compiler-cli": "~12.1.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "angular-http-server": "^1.10.0",
     "jasmine-core": "~3.7.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
