@@ -17,7 +17,7 @@
 		"type": "git",
 		"url": "git@github.com:indraraj26/ngx-backdrop.git"
 	},
-  "description": "This provides backdrop component with Props and Event to manage",
+  "description": "This provides backdrop component with Props and Event to manage backdrop",
   "peerDependencies": {
     "@angular/common": "^12.1.0",
     "@angular/core": "^12.1.0"
