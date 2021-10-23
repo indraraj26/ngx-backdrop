@@ -1,6 +1,0 @@
-/*
- * Public API Surface of ngx-backdrop
- */
-export * from './lib/ngx-backdrop.component';
-export * from './lib/ngx-backdrop.module';
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9wdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBQ0gsY0FBYyw4QkFBOEIsQ0FBQztBQUM3QyxjQUFjLDJCQUEyQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBuZ3gtYmFja2Ryb3BcbiAqL1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LWJhY2tkcm9wLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9uZ3gtYmFja2Ryb3AubW9kdWxlJztcbiJdfQ==
