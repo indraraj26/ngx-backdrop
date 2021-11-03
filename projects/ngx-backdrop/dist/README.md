@@ -1,7 +1,7 @@
 # ngx-backdrop @Indraraj26
 # [Demo](https://indraraj26.github.io/ngx-backdrop)
 
-# Installation
+## @Installation
 
 ```
 npm install @indraraj26/ngx-backdrop
@@ -62,3 +62,16 @@ ts:
             }
           }       
 ```
+
+## @Help Improve
+
+Found a bug or an issue with this? [Open a new issue](https://github.com/indraraj26/ngx-backdrop/issues) here on GitHub.
+
+## @Supported Version
+
+Angular >= 12
+
+## @License
+
+The MIT License
+ 
