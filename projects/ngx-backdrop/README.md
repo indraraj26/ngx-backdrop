@@ -1,5 +1,27 @@
 # ngx-backdrop @Indraraj26
 # [Demo](https://indraraj26.github.io/ngx-backdrop)
+
+# Installation
+
+```
+npm install @indraraj26/ngx-backdrop
+```
+
+And then include it in your module.
+
+```
+import { NgxBackdropModule } from '@indraraj26/ngx-backdrop';
+// ...
+
+@NgModule({
+imports: [
+ NgxBackdropModule
+// ...
+]
+// ...
+})
+export class AppModule {}
+```
 ## @Props
 - show - {boolean} - default: true - toggle backdrop
 - canBackDropDismiss - {boolean} - default : false
