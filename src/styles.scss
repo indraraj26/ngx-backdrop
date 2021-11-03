@@ -26,3 +26,12 @@ body {
     width: calc(100% - 5%);
     padding: 10px;
 }
+
+@mixin section-header() {
+  color: #6e6e6e;
+  margin-bottom: 10px;
+}
+
+.installation-header, .usage-header {
+  @include section-header;
+}

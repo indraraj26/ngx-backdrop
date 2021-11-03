@@ -7,6 +7,7 @@ import { ContentOverlayComponent } from './content-overlay/content-overlay.compo
 import { ElementContentOverlayComponent } from './element-content-overlay/element-content-overlay.component';
 import { TabsComponent } from './tabs.component';
 import { NgxBackdropModule } from '@indraraj26/ngx-backdrop';
+import { InstallationComponent } from './installation/installation.component';
 
 const tabRoutes = [
   {
@@ -42,7 +43,8 @@ const tabRoutes = [
     ContentOverlayComponent,
     FullOverlayComponent,
     ElementContentOverlayComponent,
-    TabsComponent
+    TabsComponent,
+    InstallationComponent
   ],
   imports: [CommonModule, NgxBackdropModule, RouterModule.forChild(tabRoutes), AutosizeModule],
 })
